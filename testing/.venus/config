@@ -1,0 +1,18 @@
+// Configuration file for Venus
+// All paths can be relative (to the location of this config file) or absolute
+{
+  hostname: 'localhost',
+
+  includes: {
+    default: [
+      '../mocks/base.js',
+      'sinon.js',
+      '../../source/lib/jquery-1.9.0.js',
+      '../../source/lib/underscore.js',
+      '../../source/lib/backbone.js',
+      '../../source/lib/min/fiber.min.js',      
+      '../../source/lib/q.js',
+      '../../source/lib/loader.js'
+    ]
+  }
+}

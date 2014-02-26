@@ -1,0 +1,30 @@
+<html>
+	<head>
+		
+		<script type='text/javascript' src='bluebird.js'></script>
+		<script>
+		var Bluebird = Promise.noConflict();
+
+		var Promisecuous;
+		function define(s) {
+			Promisecuous = s();
+		}
+
+
+		var P = function() {
+			return {
+				dodat: function() {
+					console.log('smurf');
+				}
+			};
+		}
+
+		</script>
+		<script type='text/javascript' src='../../build/promisecuous-global.js'></script>
+		<script>
+			Promisecuous.setLibrary(Bluebird, 'bluebird');
+		</script>
+
+ 	</head>
+ 	<body></body>
+</html>
